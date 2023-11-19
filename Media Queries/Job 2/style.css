@@ -1,0 +1,24 @@
+body {
+    background-color: #88c1d0;
+}
+
+/* Pour les écrans entre 1680 et 1920px */
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+    body {
+        background-color: #ffca4b;
+    }
+}
+
+/* Pour les écrans entre 1280 et 1680 */
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+    body {
+        background-color: #275fa0;
+    }
+}
+
+/* Pour les écrans de moins de 1280px */
+@media screen and (max-width: 1280px) {
+    body {
+        background-color: #ffffff;
+    }
+}

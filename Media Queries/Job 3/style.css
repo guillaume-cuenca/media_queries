@@ -1,0 +1,36 @@
+/* Style par défaut pour toutes les résolutions */
+.section {
+    background-color: #88c1d0; 
+    margin: 10px; 
+}
+
+/* Conteneur pour les sections */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styles pour les sections sur des écrans très larges (>= 1600px) */
+@media (min-width: 1600px) {
+    .section {
+        width: calc(20% - 20px); 
+        height: 100px; 
+    }
+}
+
+/* Styles pour les sections sur des écrans moyens (768px - 1599px) */
+@media (min-width: 768px) and (max-width: 1599px) {
+    .section {
+        width: calc(50% - 20px); 
+        height: 100px; 
+    }
+}
+
+/* Styles pour les sections sur des écrans petits (<= 767px) */
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 20px); 
+        height: 100px; 
+    }
+}
